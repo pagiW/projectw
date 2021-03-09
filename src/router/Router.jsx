@@ -7,8 +7,8 @@ const Router = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path='/dist/index.html' component={Main} />
-                <Route exact path='/dist/index.html/characters' component={Character} />
+                <Route exact path='/' component={Main} />
+                <Route exact path='/characters' component={Character} />
             </Switch>
         </BrowserRouter>
     );
