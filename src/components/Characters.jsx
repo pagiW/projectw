@@ -15,7 +15,7 @@ const Characters = () => {
             <h1>characters</h1>
             { Object.keys(character).length > 0 && <><img src={character.image} alt='character' /> <h1>{character.name}</h1></>}
             <button onClick={get}>get character</button>
-            <Link to='/dist/index.html'>Go back</Link>
+            <Link to='/'>Go back</Link>
         </main>
     );
 }
