@@ -10,7 +10,6 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[contenthash].js'
     },
-    watch: true,
     module: {
         rules: [
             {
@@ -51,5 +50,12 @@ module.exports = {
             filename: '[name].[contenthash].css'
         }),
         new Dotenv()
-    ]
+    ],
+    devServer: {
+        open: true,
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        historyApiFallback: true,
+        port: 3000
+    }
 }
